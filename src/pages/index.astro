@@ -1,22 +1,12 @@
 ---
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from '../components/Header.astro';
+import Layout from '../layout/Layout.astro';
+import Carrusel from '../components/Carrusel.astro'
+import Nosotros from "../components/Nosotros.astro";
+import Queesastro from "../components/Queesastro.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		 <Header/>
-
-	</body>
-
-
-
-</html>
-<script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+ <Layout titulo="Home">	
+	<Carrusel/>	
+	<Nosotros/>
+	<Queesastro/>
+ </Layout>
